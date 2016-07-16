@@ -1,0 +1,127 @@
+// ==UserScript==
+// @name         Agar Tricksplit, Faster feeding !
+// @namespace    http://vbprogramer88.esy.es/
+// @version      4.0.1
+// @description  Press D to split in 16 ! It's perfect for tricksplit ! And press W to eject fast mass !
+// @author       Anthony Brunet-Bessette & Agar File YT
+// @match        http://agar.io/*
+// @grant        none
+// ==/UserScript==
+document.getElementById("instructions").innerHTML += "<center><span class='text-muted'><span data-itr='instructions_e'> Press <b>D</b> to split in 16x !</span></span></center>";
+document.getElementById("instructions").innerHTML += "<center><span class='text-muted'><span data-itr='instructions_q'> Created by<b> <strong>Anthony Brunet-Bessette</strong> and <strong>Agar File</strong></b>!</span></span></center>";
+document.getElementById("instructions").innerHTML += "<a href='https://www.youtube.com/channel/UCWGbmAErDv528JWyh2K0MJg' target='_blank'><img alt='Agar.io & Other !' id='Header1_headerimg' src='data:image/png;base64,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' style='display: inline' height='100px ; ' width='100px; '></div>";
+document.getElementById("instructions").innerHTML += "<a href='https://www.facebook.com/vbprogramer88/?fref=ts' target='_blank'><img alt='Like my FaceBook page !' id='Header1_headerimg' src='http://i.imgur.com/lMbNR5E.png' style='display: inline' height='100px ; ' width='100px; '></div>";
+document.getElementById("instructions").innerHTML += "<a href='http://www.agarfile.esy.es/skype.html' target='_blank'><img alt='Add me on skype !' id='Header1_headerimg' src='http://i.imgur.com/p5fsgun.png' style='display: inline' height='100px ; ' width='100px; '></div>";
+$("h2").replaceWith('<h2>Agar File YT</h2>');
+(function() {
+    var amount = 6;
+    var duration = 50; //ms
+
+    var overwriting = function(evt) {
+        if (evt.keyCode === 68) { // KEY_D
+            for (var i = 0; i < amount; ++i) {
+                setTimeout(function() {
+                    window.onkeydown({keyCode: 32}); // KEY_SPACE
+                    window.onkeyup({keyCode: 32});
+                }, i * duration);
+            }
+        }
+    };
+
+    window.addEventListener('keydown', overwriting);
+})();
+function pressW() {
+	var oEvent = document.createEvent('KeyboardEvent');
+	var k = 87;
+	// Chromium Hack
+	Object.defineProperty(oEvent, 'keyCode', {
+	            get : function() {
+	                return this.keyCodeVal;
+	            }
+	});     
+	Object.defineProperty(oEvent, 'which', {
+	            get : function() {
+	                return this.keyCodeVal;
+	            }
+	});     
+
+	if (oEvent.initKeyboardEvent) {
+	    oEvent.initKeyboardEvent("keydown", true, true, document.defaultView, false, false, false, false, k, k);
+	} else {
+	    oEvent.initKeyEvent("keydown", true, true, document.defaultView, false, false, false, false, k, 0);
+	}
+
+	oEvent.keyCodeVal = k;
+
+	if (oEvent.keyCode !== k) {
+	    console.log("keyCode mismatch " + oEvent.keyCode + "(" + oEvent.which + ")");
+	}
+	document.dispatchEvent(oEvent);
+
+	var oEvent = document.createEvent('KeyboardEvent');
+	// Chromium Hack
+	Object.defineProperty(oEvent, 'keyCode', {
+	            get : function() {
+	                return this.keyCodeVal;
+	            }
+	});     
+	Object.defineProperty(oEvent, 'which', {
+	            get : function() {
+	                return this.keyCodeVal;
+	            }
+	});     
+
+	if (oEvent.initKeyboardEvent) {
+	    oEvent.initKeyboardEvent("keyup", true, true, document.defaultView, false, false, false, false, k, k);
+	} else {
+	    oEvent.initKeyEvent("keyup", true, true, document.defaultView, false, false, false, false, k, 0);
+	}
+
+	oEvent.keyCodeVal = k;
+
+	if (oEvent.keyCode !== k) {
+	    console.log("keyCode mismatch " + oEvent.keyCode + "(" + oEvent.which + ")");
+	}	
+	document.dispatchEvent(oEvent);
+}
+window.pressW = pressW;
+document.onkeypress = function(e) {
+	e = e || window.event;
+	if (e.keyCode == 87) {
+		for (var i = 0; i<7; i++) {
+			setTimeout(pressW, i * 80);
+		}
+    }    
+}
+window.addEventListener('keydown', keydown);
+window.addEventListener('keyup', keyup);
+
+var EjectDown = false;
+
+var speed = 25; //in ms
+
+function keydown(event) {
+    if (event.keyCode == 87 && EjectDown === false) { // key W
+        EjectDown = true;
+        setTimeout(eject, speed);
+    }
+}
+
+function keyup(event) {
+    if (event.keyCode == 87) { // key W
+        EjectDown = false;
+    }
+}
+
+function eject() {
+    if (EjectDown) {
+        window.onkeydown({keyCode: 87}); // key W
+        window.onkeyup({keyCode: 87});
+        setTimeout(eject, speed);
+    }
+}
+
+function split() {
+    $("body").trigger($.Event("keydown", { keyCode: 32})); //key space
+    $("body").trigger($.Event("keyup", { keyCode: 32})); //jquery is required for split to work
+}
